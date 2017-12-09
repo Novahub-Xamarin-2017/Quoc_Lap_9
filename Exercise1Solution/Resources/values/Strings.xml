@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="backspace"><![CDATA[<-]]></string>
+  <string name="back">Back</string>
+  <string name="sign_up">SIGN UP</string>
+  <string name="connect_with_facebook">CONNECT WITH FACEBOOK</string>
+  <string name="first_name">First Name</string>
+  <string name="last_name">Last Name</string>
+  <string name="email_address">Email Address</string>
+  <string name="username">Username</string>
+  <string name="password">Password</string>
+  <string name="confirm_password">Confirm Password</string>
+  <string name="i_agree_to_the">I agree to the" "</string>
+  <string name="terms_of_service"> Terms of Service</string>
+</resources>
