@@ -15,7 +15,7 @@ namespace Exercise2Solution
         [InjectView(Resource.Id.tvResult)] private TextView tvResult;
 
         [InjectOnClick(Resource.Id.btSolve)]
-        void OnClickBtSolve(object sender, EventArgs e)
+        private void OnClickBtSolve(object sender, EventArgs e)
         {
             var numberA = double.Parse(etA.Text);
             var numberB = double.Parse(etB.Text);
