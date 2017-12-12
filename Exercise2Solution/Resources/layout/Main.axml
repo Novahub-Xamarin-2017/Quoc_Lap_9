@@ -7,22 +7,22 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:background="#ffaa66cc"
+        android:background="@android:color/holo_purple"
         android:gravity="center"
-        android:text="Quadratic Equation Solver"
-        android:textColor="#fff"
-        android:textSize="24sp"
+        android:text="@string/quadratic_equation_solver"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_text_size"
         android:textStyle="bold" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/input_height"
         android:weightSum="3">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="A = "
-            android:textSize="20sp"
+            android:text="@string/a"
+            android:textSize="@dimen/input_text_size"
             android:gravity="center" />
         <EditText
             android:id="@+id/etA"
@@ -30,20 +30,19 @@
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:gravity="center"
-            android:textSize="20sp"
-            android:inputType="numberDecimal"
-            android:layout_marginRight="30dp" />
+            android:textSize="@dimen/input_text_size"
+            android:inputType="numberDecimal" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/input_height"
         android:weightSum="3">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="B = "
-            android:textSize="20sp"
+            android:text="@string/b"
+            android:textSize="@dimen/input_text_size"
             android:gravity="center" />
         <EditText
             android:id="@+id/etB"
@@ -51,20 +50,19 @@
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:gravity="center"
-            android:textSize="20sp"
-            android:inputType="numberDecimal"
-            android:layout_marginRight="30dp" />
+            android:textSize="@dimen/input_height"
+            android:inputType="numberDecimal" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/input_height"
         android:weightSum="3">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="C = "
-            android:textSize="20sp"
+            android:text="@string/c"
+            android:textSize="@dimen/input_text_size"
             android:gravity="center" />
         <EditText
             android:id="@+id/etC"
@@ -72,19 +70,13 @@
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:gravity="center"
-            android:textSize="20sp"
-            android:inputType="numberDecimal"
-            android:layout_marginRight="30dp" />
+            android:textSize="@dimen/input_text_size"
+            android:inputType="numberDecimal" />
     </LinearLayout>
-    <Button
-        android:text="Solve"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btSolve" />
     <TextView
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="@dimen/input_text_size"
         android:gravity="center" />
 </LinearLayout>

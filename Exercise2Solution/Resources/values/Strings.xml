@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Exercise2Solution</string>
+  <string name="app_name">My Application</string>
+    <string name="quadratic_equation_solver">Quadratic Equation Solver</string>
+    <string name="a">A =</string>
+    <string name="b">B =</string>
+    <string name="c">C =</string>
 </resources>
