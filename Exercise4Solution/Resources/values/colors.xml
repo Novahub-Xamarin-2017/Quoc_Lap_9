@@ -5,4 +5,5 @@
     <color name="colorAccent">#ff4081</color>
     <color name="pink">#FF4081</color>
     <color name="black">#000</color>
+    <color name="result_backgound">#dddddd</color>
 </resources>

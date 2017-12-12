@@ -159,15 +159,17 @@ namespace Exercise4Solution
         [InjectOnClick(Resource.Id.btnSquareRoot)]
         private void OnClickBtnSquareRoot(object sender, EventArgs e)
         {
-            tvResult.Text = Math.Sqrt(entry) + "";
+            entry = Math.Sqrt(entry);
+            tvResult.Text = entry + "";
             entry = 0;
             pointNumberFlag = false;
         }
 
-        [InjectOnClick(Resource.Id.btnSquare)]
+        [InjectOnClick(Resource.Id.btnQuare)]
         private void OnClickBtnSquare(object sender, EventArgs e)
         {
-            tvResult.Text = entry * entry + "";
+            entry = entry * entry;
+            tvResult.Text = entry + "";
             entry = 0;
             pointNumberFlag = false;
         }
@@ -175,7 +177,8 @@ namespace Exercise4Solution
         [InjectOnClick(Resource.Id.btnInverse)]
         private void OnClickBtnInverse(object sender, EventArgs e)
         {
-            tvResult.Text = 1.0 / entry + "";
+            entry = 1.0 / entry;
+            tvResult.Text = entry + "";
             entry = 0;
             pointNumberFlag = false;
         }
@@ -185,24 +188,24 @@ namespace Exercise4Solution
             switch (lastOperator)
             {
                 case Operator.Add:
-                    result += entry;
+                    result += Convert.ToDouble(tvResult.Text);
                     break;
                 case Operator.Sub:
-                    result -= entry;
+                    result -= Convert.ToDouble(tvResult.Text);
                     break;
                 case Operator.Mul:
-                    result *= entry;
+                    result *= Convert.ToDouble(tvResult.Text);
                     break;
                 case Operator.Div:
-                    result /= entry;
+                    result /= Convert.ToDouble(tvResult.Text);
                     break;
                 case Operator.Remainder:
-                    result = result % entry;
+                    result = result % Convert.ToDouble(tvResult.Text);
                     break;
                 case Operator.Solve:
-                    if (!entry.Equals(0))
+                    if (tvResult.Text != "0")
                     {
-                        result = entry;
+                        result = Convert.ToDouble(tvResult.Text);
                     }
                     break;
                 case Operator.Point:

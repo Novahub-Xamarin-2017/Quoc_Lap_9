@@ -59,6 +59,9 @@ namespace Exercise4Solution
 			// aapt resource value: 0x7f030003
 			public const int pink = 2130903043;
 			
+			// aapt resource value: 0x7f030005
+			public const int result_backgound = 2130903045;
+			
 			static Color()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -69,83 +72,117 @@ namespace Exercise4Solution
 			}
 		}
 		
+		public partial class Dimension
+		{
+			
+			// aapt resource value: 0x7f040003
+			public const int edt_height = 2130968579;
+			
+			// aapt resource value: 0x7f040002
+			public const int margin_left = 2130968578;
+			
+			// aapt resource value: 0x7f040004
+			public const int normal_size = 2130968580;
+			
+			// aapt resource value: 0x7f040006
+			public const int result_margin_right = 2130968582;
+			
+			// aapt resource value: 0x7f040005
+			public const int result_text = 2130968581;
+			
+			// aapt resource value: 0x7f040001
+			public const int title_size = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int toolbar_navigation_text_size = 2130968576;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050014
-			public const int btnAdd = 2131034132;
+			// aapt resource value: 0x7f060014
+			public const int btnAdd = 2131099668;
 			
-			// aapt resource value: 0x7f050007
-			public const int btnBackspace = 2131034119;
+			// aapt resource value: 0x7f060007
+			public const int btnBackspace = 2131099655;
 			
-			// aapt resource value: 0x7f050015
-			public const int btnChangeStatus = 2131034133;
+			// aapt resource value: 0x7f060015
+			public const int btnChangeStatus = 2131099669;
 			
-			// aapt resource value: 0x7f050006
-			public const int btnClear = 2131034118;
+			// aapt resource value: 0x7f060006
+			public const int btnClear = 2131099654;
 			
-			// aapt resource value: 0x7f050005
-			public const int btnClearEntry = 2131034117;
+			// aapt resource value: 0x7f060005
+			public const int btnClearEntry = 2131099653;
 			
-			// aapt resource value: 0x7f050008
-			public const int btnDiv = 2131034120;
+			// aapt resource value: 0x7f060008
+			public const int btnDiv = 2131099656;
 			
-			// aapt resource value: 0x7f050004
-			public const int btnInverse = 2131034116;
+			// aapt resource value: 0x7f060004
+			public const int btnInverse = 2131099652;
 			
-			// aapt resource value: 0x7f05000c
-			public const int btnMul = 2131034124;
+			// aapt resource value: 0x7f06000c
+			public const int btnMul = 2131099660;
 			
-			// aapt resource value: 0x7f050016
-			public const int btnNum0 = 2131034134;
+			// aapt resource value: 0x7f060016
+			public const int btnNum0 = 2131099670;
 			
-			// aapt resource value: 0x7f050011
-			public const int btnNum1 = 2131034129;
+			// aapt resource value: 0x7f060011
+			public const int btnNum1 = 2131099665;
 			
-			// aapt resource value: 0x7f050012
-			public const int btnNum2 = 2131034130;
+			// aapt resource value: 0x7f060012
+			public const int btnNum2 = 2131099666;
 			
-			// aapt resource value: 0x7f050013
-			public const int btnNum3 = 2131034131;
+			// aapt resource value: 0x7f060013
+			public const int btnNum3 = 2131099667;
 			
-			// aapt resource value: 0x7f05000d
-			public const int btnNum4 = 2131034125;
+			// aapt resource value: 0x7f06000d
+			public const int btnNum4 = 2131099661;
 			
-			// aapt resource value: 0x7f05000e
-			public const int btnNum5 = 2131034126;
+			// aapt resource value: 0x7f06000e
+			public const int btnNum5 = 2131099662;
 			
-			// aapt resource value: 0x7f05000f
-			public const int btnNum6 = 2131034127;
+			// aapt resource value: 0x7f06000f
+			public const int btnNum6 = 2131099663;
 			
-			// aapt resource value: 0x7f050009
-			public const int btnNum7 = 2131034121;
+			// aapt resource value: 0x7f060009
+			public const int btnNum7 = 2131099657;
 			
-			// aapt resource value: 0x7f05000a
-			public const int btnNum8 = 2131034122;
+			// aapt resource value: 0x7f06000a
+			public const int btnNum8 = 2131099658;
 			
-			// aapt resource value: 0x7f05000b
-			public const int btnNum9 = 2131034123;
+			// aapt resource value: 0x7f06000b
+			public const int btnNum9 = 2131099659;
 			
-			// aapt resource value: 0x7f050017
-			public const int btnPoint = 2131034135;
+			// aapt resource value: 0x7f060017
+			public const int btnPoint = 2131099671;
 			
-			// aapt resource value: 0x7f050001
-			public const int btnRemainer = 2131034113;
+			// aapt resource value: 0x7f060003
+			public const int btnQuare = 2131099651;
 			
-			// aapt resource value: 0x7f050018
-			public const int btnSolve = 2131034136;
+			// aapt resource value: 0x7f060001
+			public const int btnRemainer = 2131099649;
 			
-			// aapt resource value: 0x7f050003
-			public const int btnSquare = 2131034115;
+			// aapt resource value: 0x7f060018
+			public const int btnSolve = 2131099672;
 			
-			// aapt resource value: 0x7f050002
-			public const int btnSquareRoot = 2131034114;
+			// aapt resource value: 0x7f060002
+			public const int btnSquareRoot = 2131099650;
 			
-			// aapt resource value: 0x7f050010
-			public const int btnSub = 2131034128;
+			// aapt resource value: 0x7f060010
+			public const int btnSub = 2131099664;
 			
-			// aapt resource value: 0x7f050000
-			public const int tvResult = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int tvResult = 2131099648;
 			
 			static Id()
 			{
@@ -176,11 +213,113 @@ namespace Exercise4Solution
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int app_name = 2130968576;
+			// aapt resource value: 0x7f050011
+			public const int Inverse = 2131034129;
 			
-			// aapt resource value: 0x7f040001
-			public const int backspace = 2130968577;
+			// aapt resource value: 0x7f050020
+			public const int add = 2131034144;
+			
+			// aapt resource value: 0x7f050000
+			public const int app_name = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int back = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int backspace = 2131034113;
+			
+			// aapt resource value: 0x7f050021
+			public const int change_status = 2131034145;
+			
+			// aapt resource value: 0x7f050013
+			public const int clear = 2131034131;
+			
+			// aapt resource value: 0x7f050012
+			public const int clear_entry = 2131034130;
+			
+			// aapt resource value: 0x7f05000a
+			public const int confirm_password = 2131034122;
+			
+			// aapt resource value: 0x7f050004
+			public const int connect_with_facebook = 2131034116;
+			
+			// aapt resource value: 0x7f050014
+			public const int divide = 2131034132;
+			
+			// aapt resource value: 0x7f050007
+			public const int email_address = 2131034119;
+			
+			// aapt resource value: 0x7f050023
+			public const int equal = 2131034147;
+			
+			// aapt resource value: 0x7f050005
+			public const int first_name = 2131034117;
+			
+			// aapt resource value: 0x7f05000b
+			public const int i_agree_to_the = 2131034123;
+			
+			// aapt resource value: 0x7f050006
+			public const int last_name = 2131034118;
+			
+			// aapt resource value: 0x7f050018
+			public const int mul = 2131034136;
+			
+			// aapt resource value: 0x7f05000d
+			public const int number_0 = 2131034125;
+			
+			// aapt resource value: 0x7f05001d
+			public const int number_1 = 2131034141;
+			
+			// aapt resource value: 0x7f05001e
+			public const int number_2 = 2131034142;
+			
+			// aapt resource value: 0x7f05001f
+			public const int number_3 = 2131034143;
+			
+			// aapt resource value: 0x7f050019
+			public const int number_4 = 2131034137;
+			
+			// aapt resource value: 0x7f05001a
+			public const int number_5 = 2131034138;
+			
+			// aapt resource value: 0x7f05001b
+			public const int number_6 = 2131034139;
+			
+			// aapt resource value: 0x7f050015
+			public const int number_7 = 2131034133;
+			
+			// aapt resource value: 0x7f050016
+			public const int number_8 = 2131034134;
+			
+			// aapt resource value: 0x7f050017
+			public const int number_9 = 2131034135;
+			
+			// aapt resource value: 0x7f050009
+			public const int password = 2131034121;
+			
+			// aapt resource value: 0x7f050022
+			public const int point = 2131034146;
+			
+			// aapt resource value: 0x7f050010
+			public const int quare = 2131034128;
+			
+			// aapt resource value: 0x7f05000e
+			public const int remainder = 2131034126;
+			
+			// aapt resource value: 0x7f050003
+			public const int sign_up = 2131034115;
+			
+			// aapt resource value: 0x7f05000f
+			public const int square_root = 2131034127;
+			
+			// aapt resource value: 0x7f05001c
+			public const int sub = 2131034140;
+			
+			// aapt resource value: 0x7f05000c
+			public const int terms_of_service = 2131034124;
+			
+			// aapt resource value: 0x7f050008
+			public const int username = 2131034120;
 			
 			static String()
 			{
