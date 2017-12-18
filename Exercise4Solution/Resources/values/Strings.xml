@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="backspace"><![CDATA[<-]]></string>
+    <string name="number_0">0</string>
+    <string name="remainder">%</string>
+    <string name="square_root">v</string>
+    <string name="quare">^2</string>
+    <string name="Inverse">1/x</string>
+    <string name="clear_entry">CE</string>
+    <string name="clear">C</string>
+    <string name="divide">/</string>
+    <string name="number_7">7</string>
+    <string name="number_8">8</string>
+    <string name="number_9">9</string>
+    <string name="mul">X</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="sub">-</string>
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="add">+</string>
+    <string name="change_status">+-</string>
+    <string name="point">.</string>
+    <string name="equal">=</string>
+</resources>
