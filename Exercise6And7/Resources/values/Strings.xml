@@ -1,62 +1,7 @@
 <resources>
     <string name="app_name">Login</string>
-    <string name="backspace"><![CDATA[<-]]></string>
-    <string name="back">Back</string>
-    <string name="sign_up">SIGN UP</string>
-    <string name="connect_with_facebook">CONNECT WITH FACEBOOK</string>
-    <string name="first_name">First Name</string>
-    <string name="last_name">Last Name</string>
-    <string name="email_address">Email Address</string>
-    <string name="username">&#160;&#160;Username</string>
-    <string name="password">Password</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="i_agree_to_the">I agree to the</string>
-    <string name="terms_of_service">Terms of Service</string>
-    <string name="number_0">0</string>
-    <string name="remainder">%</string>
-    <string name="square_root">v</string>
-    <string name="quare">^2</string>
-    <string name="Inverse">1/x</string>
-    <string name="clear_entry">CE</string>
-    <string name="clear">C</string>
-    <string name="divide">/</string>
-    <string name="number_7">7</string>
-    <string name="number_8">8</string>
-    <string name="number_9">9</string>
-    <string name="mul">X</string>
-    <string name="number_4">4</string>
-    <string name="number_5">5</string>
-    <string name="number_6">6</string>
-    <string name="sub">-</string>
-    <string name="number_1">1</string>
-    <string name="number_2">2</string>
-    <string name="number_3">3</string>
-    <string name="add">+</string>
-    <string name="change_status">+-</string>
-    <string name="point">.</string>
-    <string name="equal">=</string>
-    <string name="quadratic_equation_solver">Quadratic Equation Solver</string>
-    <string name="a">A =</string>
-    <string name="b">B =</string>
-    <string name="c">C =</string>
-    <string name="_username">username</string>
-    <string name="moviens">MOViENS</string>
-    <string name="interac_with_your_demons">INTERAC WITH YOUR DEMONS</string>
-    <string name="sign_in">SIGN IN</string>
-    <string name="or">or</string>
-    <string name="sign_in_with_facebook">Sign in with Facebook</string>
-    <string name="signup">&#160;Sign Up.</string>
-    <string name="personal_info">Personal info</string>
-    <string name="birthdate">BirthDate</string>
-    <string name="residence_address">Residence address</string>
-    <string name="first_name_is_required">First name is required</string>
-    <string name="mm_dd_yyyy">MM/DD/YYYY</string>
-    <string name="social_security">Social Security</string>
-    <string name="address">address</string>
-    <string name="city">City</string>
-    <string name="zip_code">zip code</string>
-    <string name="application">&#160;&#160;&#160;&#160;Application</string>
     <string name="name">Name</string>
+    <string name="password">Password</string>
     <string name="login">login</string>
     <string name="no_account">No Account?</string>
     <string name="register">register</string>

@@ -265,194 +265,29 @@ namespace Exercise6And7
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060011
-			public const int Inverse = 2131099665;
-			
-			// aapt resource value: 0x7f060028
-			public const int _username = 2131099688;
-			
-			// aapt resource value: 0x7f060025
-			public const int a = 2131099685;
-			
-			// aapt resource value: 0x7f060020
-			public const int add = 2131099680;
-			
-			// aapt resource value: 0x7f060035
-			public const int address = 2131099701;
-			
 			// aapt resource value: 0x7f060000
 			public const int app_name = 2131099648;
 			
-			// aapt resource value: 0x7f060038
-			public const int application = 2131099704;
-			
-			// aapt resource value: 0x7f060026
-			public const int b = 2131099686;
-			
-			// aapt resource value: 0x7f060002
-			public const int back = 2131099650;
-			
-			// aapt resource value: 0x7f060001
-			public const int backspace = 2131099649;
-			
-			// aapt resource value: 0x7f060030
-			public const int birthdate = 2131099696;
-			
-			// aapt resource value: 0x7f060027
-			public const int c = 2131099687;
-			
-			// aapt resource value: 0x7f060021
-			public const int change_status = 2131099681;
-			
-			// aapt resource value: 0x7f060036
-			public const int city = 2131099702;
-			
-			// aapt resource value: 0x7f060013
-			public const int clear = 2131099667;
-			
-			// aapt resource value: 0x7f060012
-			public const int clear_entry = 2131099666;
-			
-			// aapt resource value: 0x7f06000a
-			public const int confirm_password = 2131099658;
-			
-			// aapt resource value: 0x7f060004
-			public const int connect_with_facebook = 2131099652;
-			
-			// aapt resource value: 0x7f060014
-			public const int divide = 2131099668;
-			
-			// aapt resource value: 0x7f060007
-			public const int email_address = 2131099655;
-			
-			// aapt resource value: 0x7f060023
-			public const int equal = 2131099683;
-			
-			// aapt resource value: 0x7f060005
-			public const int first_name = 2131099653;
-			
-			// aapt resource value: 0x7f060032
-			public const int first_name_is_required = 2131099698;
-			
-			// aapt resource value: 0x7f06000b
-			public const int i_agree_to_the = 2131099659;
-			
-			// aapt resource value: 0x7f06002a
-			public const int interac_with_your_demons = 2131099690;
+			// aapt resource value: 0x7f060003
+			public const int login = 2131099651;
 			
 			// aapt resource value: 0x7f060006
-			public const int last_name = 2131099654;
+			public const int mobile_number = 2131099654;
 			
-			// aapt resource value: 0x7f06003a
-			public const int login = 2131099706;
+			// aapt resource value: 0x7f060001
+			public const int name = 2131099649;
 			
-			// aapt resource value: 0x7f060033
-			public const int mm_dd_yyyy = 2131099699;
+			// aapt resource value: 0x7f060004
+			public const int no_account = 2131099652;
 			
-			// aapt resource value: 0x7f06003d
-			public const int mobile_number = 2131099709;
+			// aapt resource value: 0x7f060002
+			public const int password = 2131099650;
 			
-			// aapt resource value: 0x7f060029
-			public const int moviens = 2131099689;
+			// aapt resource value: 0x7f060007
+			public const int referee_code = 2131099655;
 			
-			// aapt resource value: 0x7f060018
-			public const int mul = 2131099672;
-			
-			// aapt resource value: 0x7f060039
-			public const int name = 2131099705;
-			
-			// aapt resource value: 0x7f06003b
-			public const int no_account = 2131099707;
-			
-			// aapt resource value: 0x7f06000d
-			public const int number_0 = 2131099661;
-			
-			// aapt resource value: 0x7f06001d
-			public const int number_1 = 2131099677;
-			
-			// aapt resource value: 0x7f06001e
-			public const int number_2 = 2131099678;
-			
-			// aapt resource value: 0x7f06001f
-			public const int number_3 = 2131099679;
-			
-			// aapt resource value: 0x7f060019
-			public const int number_4 = 2131099673;
-			
-			// aapt resource value: 0x7f06001a
-			public const int number_5 = 2131099674;
-			
-			// aapt resource value: 0x7f06001b
-			public const int number_6 = 2131099675;
-			
-			// aapt resource value: 0x7f060015
-			public const int number_7 = 2131099669;
-			
-			// aapt resource value: 0x7f060016
-			public const int number_8 = 2131099670;
-			
-			// aapt resource value: 0x7f060017
-			public const int number_9 = 2131099671;
-			
-			// aapt resource value: 0x7f06002c
-			public const int or = 2131099692;
-			
-			// aapt resource value: 0x7f060009
-			public const int password = 2131099657;
-			
-			// aapt resource value: 0x7f06002f
-			public const int personal_info = 2131099695;
-			
-			// aapt resource value: 0x7f060022
-			public const int point = 2131099682;
-			
-			// aapt resource value: 0x7f060024
-			public const int quadratic_equation_solver = 2131099684;
-			
-			// aapt resource value: 0x7f060010
-			public const int quare = 2131099664;
-			
-			// aapt resource value: 0x7f06003e
-			public const int referee_code = 2131099710;
-			
-			// aapt resource value: 0x7f06003c
-			public const int register = 2131099708;
-			
-			// aapt resource value: 0x7f06000e
-			public const int remainder = 2131099662;
-			
-			// aapt resource value: 0x7f060031
-			public const int residence_address = 2131099697;
-			
-			// aapt resource value: 0x7f06002b
-			public const int sign_in = 2131099691;
-			
-			// aapt resource value: 0x7f06002d
-			public const int sign_in_with_facebook = 2131099693;
-			
-			// aapt resource value: 0x7f060003
-			public const int sign_up = 2131099651;
-			
-			// aapt resource value: 0x7f06002e
-			public const int signup = 2131099694;
-			
-			// aapt resource value: 0x7f060034
-			public const int social_security = 2131099700;
-			
-			// aapt resource value: 0x7f06000f
-			public const int square_root = 2131099663;
-			
-			// aapt resource value: 0x7f06001c
-			public const int sub = 2131099676;
-			
-			// aapt resource value: 0x7f06000c
-			public const int terms_of_service = 2131099660;
-			
-			// aapt resource value: 0x7f060008
-			public const int username = 2131099656;
-			
-			// aapt resource value: 0x7f060037
-			public const int zip_code = 2131099703;
+			// aapt resource value: 0x7f060005
+			public const int register = 2131099653;
 			
 			static String()
 			{

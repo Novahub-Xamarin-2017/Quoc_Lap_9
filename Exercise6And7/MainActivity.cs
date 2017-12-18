@@ -1,7 +1,6 @@
 ﻿using System;
 using Android.App;
 using Android.Content;
-using Android.Widget;
 using Android.OS;
 using Com.Lilarcor.Cheeseknife;
 
