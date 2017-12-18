@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
 using Android.App;
 using Android.OS;
 using Android.Widget;
 using Com.Lilarcor.Cheeseknife;
-using Java.Util.Functions;
 
 namespace Exercise4Solution
 {
@@ -15,68 +13,67 @@ namespace Exercise4Solution
         private double result;
         private double entry;
         private Operator lastOperator;
-        private bool pointNumberFlag;
 
         [InjectView(Resource.Id.tvResult)] private TextView tvResult;
 
         [InjectOnClick(Resource.Id.btnNum0)]
         private void OnClickBtnNum0(object sender, EventArgs e)
         {
-            AppendNumberToEntry("0");
+            AppendNumberToEntry(((Button)sender).Tag + "");
         }
         
         [InjectOnClick(Resource.Id.btnNum1)]
         private void OnClickBtnNum1(object sender, EventArgs e)
         {
-            AppendNumberToEntry("1");
+            AppendNumberToEntry(((Button)sender).Tag + "");
         }
 
         [InjectOnClick(Resource.Id.btnNum2)]
         private void OnClickBtnNu2(object sender, EventArgs e)
         {
-            AppendNumberToEntry("2");
+            AppendNumberToEntry(((Button)sender).Tag + "");
         }
 
         [InjectOnClick(Resource.Id.btnNum3)]
         private void OnClickBtnNum3(object sender, EventArgs e)
         {
-            AppendNumberToEntry("3");
+            AppendNumberToEntry(((Button)sender).Tag + "");
         }
 
         [InjectOnClick(Resource.Id.btnNum4)]
         private void OnClickBtnNum4(object sender, EventArgs e)
         {
-            AppendNumberToEntry("4");
+            AppendNumberToEntry(((Button)sender).Tag + "");
         }
 
         [InjectOnClick(Resource.Id.btnNum5)]
         private void OnClickBtnNum5(object sender, EventArgs e)
         {
-            AppendNumberToEntry("5");
+            AppendNumberToEntry(((Button)sender).Tag + "");
         }
 
         [InjectOnClick(Resource.Id.btnNum6)]
         private void OnClickBtnNum6(object sender, EventArgs e)
         {
-            AppendNumberToEntry("6");
+            AppendNumberToEntry(((Button)sender).Tag + "");
         }
 
         [InjectOnClick(Resource.Id.btnNum7)]
         private void OnClickBtnNum7(object sender, EventArgs e)
         {
-            AppendNumberToEntry("7");
+            AppendNumberToEntry(((Button)sender).Tag + "");
         }
 
         [InjectOnClick(Resource.Id.btnNum8)]
         private void OnClickBtnNum8(object sender, EventArgs e)
         {
-            AppendNumberToEntry("8");
+            AppendNumberToEntry(((Button)sender).Tag + "");
         }
 
         [InjectOnClick(Resource.Id.btnNum9)]
         private void OnClickBtnNum9(object sender, EventArgs e)
         {
-            AppendNumberToEntry("9");
+            AppendNumberToEntry(((Button)sender).Tag + "");
         }
 
         [InjectOnClick(Resource.Id.btnSolve)]
@@ -142,9 +139,8 @@ namespace Exercise4Solution
         [InjectOnClick(Resource.Id.btnPoint)]
         private void OnClickBtnPoint(object sender, EventArgs e)
         {
-            if (!pointNumberFlag)
+            if (!tvResult.Text.Contains("."))
             {
-                pointNumberFlag = true;
                 tvResult.Text = entry + ".";
             }
         }
@@ -159,10 +155,18 @@ namespace Exercise4Solution
         [InjectOnClick(Resource.Id.btnSquareRoot)]
         private void OnClickBtnSquareRoot(object sender, EventArgs e)
         {
-            entry = Math.Sqrt(entry);
-            tvResult.Text = entry + "";
-            entry = 0;
-            pointNumberFlag = false;
+            if (entry >= 0)
+            {
+                entry = Math.Sqrt(entry);
+                tvResult.Text = entry + "";
+                entry = 0;
+            }
+            else
+            {
+                entry = 0;
+                result = 0;
+                tvResult.Text = "Invalid input";
+            }
         }
 
         [InjectOnClick(Resource.Id.btnQuare)]
@@ -171,7 +175,6 @@ namespace Exercise4Solution
             entry = entry * entry;
             tvResult.Text = entry + "";
             entry = 0;
-            pointNumberFlag = false;
         }
 
         [InjectOnClick(Resource.Id.btnInverse)]
@@ -180,7 +183,6 @@ namespace Exercise4Solution
             entry = 1.0 / entry;
             tvResult.Text = entry + "";
             entry = 0;
-            pointNumberFlag = false;
         }
 
         private void Solve(Operator o)
@@ -212,14 +214,15 @@ namespace Exercise4Solution
                     break;
             }
             entry = 0;
-            pointNumberFlag = false;
             lastOperator = o;
             tvResult.Text = Convert.ToString(result, CultureInfo.InvariantCulture);
         }
 
         private void AppendNumberToEntry(string number)
         {
-            entry = Convert.ToDouble(pointNumberFlag ? tvResult.Text + number : entry + number);
+            entry = Convert.ToDouble(tvResult.Text.Contains(".") || tvResult.Text == "Invalid input"
+                ? entry + number
+                : tvResult.Text + number);
             tvResult.Text = entry + "";
         }
 
@@ -233,7 +236,6 @@ namespace Exercise4Solution
 
             result = 0;
             entry = 0;
-            pointNumberFlag = false;
             lastOperator = Operator.Add;
             Cheeseknife.Inject(this);
             
