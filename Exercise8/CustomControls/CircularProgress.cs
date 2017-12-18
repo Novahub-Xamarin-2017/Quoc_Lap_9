@@ -9,9 +9,9 @@ namespace Exercise8.CustomControls
 {
     public class CircularProgress : View
     {
-        private int value = 0;
-
-        private const int Thin = 10;
+        private int value;
+        private readonly Color hightlightColor, normalColor;
+        private const int Thin = 40;
         private readonly Paint paint = new Paint();
 
         public int Value
@@ -20,7 +20,7 @@ namespace Exercise8.CustomControls
             set
             {
                 this.value = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
 
@@ -29,7 +29,7 @@ namespace Exercise8.CustomControls
 
         }
 
-        public CircularProgress(Context context) : base(context, null)
+        public CircularProgress(Context context) : this(context, null)
         {
         }
 
@@ -45,7 +45,10 @@ namespace Exercise8.CustomControls
         public CircularProgress(Context context, IAttributeSet attrs, int defStyleAttr, int defStyleRes) : base(context,
             attrs, defStyleAttr, defStyleRes)
         {
-
+            var typeArray = context.ObtainStyledAttributes(attrs, Resource.Styleable.CircularProgress);
+            value = typeArray.GetInteger(Resource.Styleable.CircularProgress_value,0);
+            hightlightColor = typeArray.GetColor(Resource.Styleable.CircularProgress_hightligh_color, Color.Red);
+            normalColor = typeArray.GetColor(Resource.Styleable.CircularProgress_normal_color, Color.Azure);
         }
 
         public override void Draw(Canvas canvas)
@@ -55,20 +58,26 @@ namespace Exercise8.CustomControls
 
             base.Draw(canvas);
 
-            paint.Color = Color.Rgb(191, 221, 210);
+            paint.Color = hightlightColor;
             paint.Flags = PaintFlags.AntiAlias;
             paint.SetStyle(Paint.Style.Stroke);
             paint.StrokeWidth = Thin;
-            canvas.DrawCircle(halfWidth, halfHeight, Math.Min(halfWidth, halfHeight), paint);
+            canvas.DrawCircle(halfWidth, halfHeight, Math.Min(halfWidth, halfHeight)- Thin, paint);
 
-            paint.Color = Color.Rgb(3, 150, 75);
+            paint.Color = normalColor;
+            var size = Math.Min(canvas.Width, canvas.Height) - 2*Thin;
+            var x = (halfWidth > halfHeight ? halfWidth - halfHeight: 0) + Thin;
+            var y = (halfWidth > halfHeight ? 0 : halfHeight - halfWidth) + Thin;
+            canvas.DrawArc(x, y, x+ size, y+ size,270, (float) 360*(100-value)/100, false, paint );
 
-            var size = Math.Min(canvas.Width, canvas.Height);
-            var x = halfWidth > halfHeight ? halfWidth - halfHeight: 0;
-            var y = halfWidth > halfHeight ? 0 : halfHeight - halfWidth;
-
-            canvas.DrawArc(x, y, x+ size, y+ size, 0,(float) (360 * value/100.0), false, paint );
+            paint.Color = hightlightColor;
+            paint.TextSize = size/2.5f;
+            paint.SetStyle(Paint.Style.Fill);
+            var textBound = new Rect();
+            paint.GetTextBounds(value + "%",0,value.ToString().Length+1,textBound);
+            canvas.DrawText(value+ "%",halfWidth - textBound.Width()/2f,halfHeight + textBound.Height()/2f,paint);
         }
+
     }
 
 }

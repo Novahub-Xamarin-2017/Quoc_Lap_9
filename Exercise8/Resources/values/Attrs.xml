@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <declare-styleable name="CircularProgress">
+    <attr name="value" format="integer" />
+    <attr name="thin" format="integer" />
+    <attr name="hightligh_color" format="color" />
+    <attr name="normal_color" format="color" />
+    <attr name="text_color" format="color" />
+  </declare-styleable>
+</resources>

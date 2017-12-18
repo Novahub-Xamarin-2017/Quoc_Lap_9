@@ -31,6 +31,21 @@ namespace Exercise8
 		public partial class Attribute
 		{
 			
+			// aapt resource value: 0x7f010002
+			public const int hightligh_color = 2130771970;
+			
+			// aapt resource value: 0x7f010003
+			public const int normal_color = 2130771971;
+			
+			// aapt resource value: 0x7f010004
+			public const int text_color = 2130771972;
+			
+			// aapt resource value: 0x7f010001
+			public const int thin = 2130771969;
+			
+			// aapt resource value: 0x7f010000
+			public const int value = 2130771968;
+			
 			static Attribute()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -41,11 +56,33 @@ namespace Exercise8
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f030000
+			public const int background = 2130903040;
+			
+			// aapt resource value: 0x7f030002
+			public const int highlight = 2130903042;
+			
+			// aapt resource value: 0x7f030001
+			public const int normal = 2130903041;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int progressControl = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int progressControl = 2131034112;
 			
 			static Id()
 			{
@@ -76,8 +113,8 @@ namespace Exercise8
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int app_name = 2130903040;
+			// aapt resource value: 0x7f040000
+			public const int app_name = 2130968576;
 			
 			static String()
 			{
@@ -85,6 +122,41 @@ namespace Exercise8
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Styleable
+		{
+			
+			public static int[] CircularProgress = new int[] {
+					2130771968,
+					2130771969,
+					2130771970,
+					2130771971,
+					2130771972};
+			
+			// aapt resource value: 2
+			public const int CircularProgress_hightligh_color = 2;
+			
+			// aapt resource value: 3
+			public const int CircularProgress_normal_color = 3;
+			
+			// aapt resource value: 4
+			public const int CircularProgress_text_color = 4;
+			
+			// aapt resource value: 1
+			public const int CircularProgress_thin = 1;
+			
+			// aapt resource value: 0
+			public const int CircularProgress_value = 0;
+			
+			static Styleable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Styleable()
 			{
 			}
 		}

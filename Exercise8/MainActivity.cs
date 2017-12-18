@@ -14,10 +14,6 @@ namespace Exercise8
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
-
-            var progressCtrol = FindViewById<CircularProgress>(Resource.Id.progressControl);
-
-            progressCtrol.Value = 75;
         }
     }
 }
