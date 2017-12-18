@@ -55,29 +55,31 @@ namespace Exercise8.CustomControls
         {
             var halfWidth = (float)canvas.Width/2;
             var halfHeight = (float)canvas.Height/2;
-
             base.Draw(canvas);
-
-            paint.Color = hightlightColor;
+            
             paint.Flags = PaintFlags.AntiAlias;
             paint.SetStyle(Paint.Style.Stroke);
             paint.StrokeWidth = Thin;
-            canvas.DrawCircle(halfWidth, halfHeight, Math.Min(halfWidth, halfHeight)- Thin, paint);
-
-            paint.Color = normalColor;
-            var size = Math.Min(canvas.Width, canvas.Height) - 2*Thin;
-            var x = (halfWidth > halfHeight ? halfWidth - halfHeight: 0) + Thin;
-            var y = (halfWidth > halfHeight ? 0 : halfHeight - halfWidth) + Thin;
-            canvas.DrawArc(x, y, x+ size, y+ size,270, (float) 360*(100-value)/100, false, paint );
+            DrawArc(halfWidth, halfHeight, normalColor, 100, canvas);
+            DrawArc(halfWidth,halfHeight, hightlightColor, value,canvas);
 
             paint.Color = hightlightColor;
-            paint.TextSize = size/2.5f;
+            paint.TextSize = Math.Min(canvas.Width, canvas.Height) / 2.5f;
             paint.SetStyle(Paint.Style.Fill);
             var textBound = new Rect();
-            paint.GetTextBounds(value + "%",0,value.ToString().Length+1,textBound);
+            paint.GetTextBounds(value + "%", 0, value.ToString().Length + 1, textBound);
             canvas.DrawText(value+ "%",halfWidth - textBound.Width()/2f,halfHeight + textBound.Height()/2f,paint);
         }
 
+        private void DrawArc(float xCenter, float yCenter, Color color, int mValue, Canvas canvas)
+        {
+            paint.Color = color;
+            var size = Math.Min(canvas.Width, canvas.Height) - 2 * Thin;
+            var x = (xCenter > yCenter ? xCenter - yCenter : 0) + Thin;
+            var y = (xCenter > yCenter ? 0 : yCenter - xCenter) + Thin;
+            var startAngle = 270 > 360 * mValue / 100 ? 270 - 360 * mValue / 100 : 90 + 360 * mValue / 100;
+            canvas.DrawArc(x, y, x + size, y + size, startAngle, (float)360 * mValue / 100, false, paint);
+        }
     }
 
 }
