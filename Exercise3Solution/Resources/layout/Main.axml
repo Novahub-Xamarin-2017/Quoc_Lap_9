@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallaper">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/login_content_margin"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cinema"
+            android:tint="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/moviens"
+            android:textSize="@dimen/login_title_text_size"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/interac_with_your_demons"
+            android:textSize="@dimen/login_text_size"
+            android:gravity="center"
+            android:textColor="@color/white" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/username_margin_top"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/username32px"
+            android:drawableTint="@color/white"
+            android:hint="@string/username"
+            android:textColorHint="@color/white"
+            android:background="@null" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/password_margin_top"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/password32px"
+            android:drawableTint="@color/white"
+            android:hint="@string/password"
+            android:textColorHint="@color/white"
+            android:background="@null" />
+        <Button
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/sign_in"
+            android:textSize="@dimen/login_button_text_size"
+            android:background="@color/orange"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/or_margin"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/white" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/sign_in_with_facebook"
+            android:textAllCaps="false"
+            android:background="@color/blue"
+            android:textSize="@dimen/login_button_text_size"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/footer_margin_bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account yet?"
+            android:gravity="center"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>
