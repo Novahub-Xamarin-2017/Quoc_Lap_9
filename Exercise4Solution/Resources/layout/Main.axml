@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:columnCount="4"
+        android:rowCount="7">
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/result_backgound"
+            android:gravity="right"
+            android:paddingRight="@dimen/result_margin_right"
+            android:text="@string/number_0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/result_text" />
+        <Button
+            android:id="@+id/btnRemainer"
+            android:text="@string/remainder" />
+        <Button
+            android:id="@+id/btnSquareRoot"
+            android:text="@string/square_root" />
+        <Button
+            android:id="@+id/btnQuare"
+            android:text="@string/quare" />
+        <Button
+            android:id="@+id/btnInverse"
+            android:text="@string/Inverse" />
+        <Button
+            android:id="@+id/btnClearEntry"
+            android:text="@string/clear_entry" />
+        <Button
+            android:id="@+id/btnClear"
+            android:text="@string/clear" />
+        <Button
+            android:id="@+id/btnBackspace"
+            android:text="@string/backspace" />
+        <Button
+            android:id="@+id/btnDiv"
+            android:text="@string/divide" />
+        <Button
+            android:id="@+id/btnNum7"
+            android:text="@string/number_7"
+            android:tag="7" />
+        <Button
+            android:id="@+id/btnNum8"
+            android:text="@string/number_8"
+            android:tag="8" />
+        <Button
+            android:id="@+id/btnNum9"
+            android:text="@string/number_9"
+            android:tag="9" />
+        <Button
+            android:id="@+id/btnMul"
+            android:text="@string/mul" />
+        <Button
+            android:id="@+id/btnNum4"
+            android:text="@string/number_4"
+            android:tag="4" />
+        <Button
+            android:id="@+id/btnNum5"
+            android:text="@string/number_5"
+            android:tag="5" />
+        <Button
+            android:id="@+id/btnNum6"
+            android:text="@string/number_6"
+            android:tag="6" />
+        <Button
+            android:id="@+id/btnSub"
+            android:text="@string/sub" />
+        <Button
+            android:id="@+id/btnNum1"
+            android:text="@string/number_1"
+            android:tag="1" />
+        <Button
+            android:id="@+id/btnNum2"
+            android:text="@string/number_2"
+            android:tag="2" />
+        <Button
+            android:id="@+id/btnNum3"
+            android:text="@string/number_3"
+            android:tag="3" />
+        <Button
+            android:id="@+id/btnAdd"
+            android:text="@string/add" />
+        <Button
+            android:id="@+id/btnChangeStatus"
+            android:text="@string/change_status" />
+        <Button
+            android:id="@+id/btnNum0"
+            android:text="@string/number_0"
+            android:tag="0" />
+        <Button
+            android:id="@+id/btnPoint"
+            android:text="@string/point" />
+        <Button
+            android:id="@+id/btnSolve"
+            android:text="@string/equal" />
+    </GridLayout>
+</RelativeLayout>

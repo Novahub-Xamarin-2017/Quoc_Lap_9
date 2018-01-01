@@ -1,0 +1,6 @@
+﻿<resources>
+  <declare-styleable name="ValueBar">
+    <attr name="title" format="string" />
+    <attr name="titleColor" format="color" />
+  </declare-styleable>
+</resources>

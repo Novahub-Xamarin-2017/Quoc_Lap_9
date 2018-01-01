@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Exercise1Solution.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Exercise11.Resource", IsApplication=true)]
 
-namespace Exercise1Solution
+namespace Exercise11
 {
 	
 	
@@ -44,6 +44,12 @@ namespace Exercise1Solution
 		public partial class Color
 		{
 			
+			// aapt resource value: 0x7f040003
+			public const int background = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int black = 2130968580;
+			
 			// aapt resource value: 0x7f040002
 			public const int colorAccent = 2130968578;
 			
@@ -53,8 +59,14 @@ namespace Exercise1Solution
 			// aapt resource value: 0x7f040001
 			public const int colorPrimaryDark = 2130968577;
 			
-			// aapt resource value: 0x7f040003
-			public const int pink = 2130968579;
+			// aapt resource value: 0x7f040007
+			public const int normal_color = 2130968583;
+			
+			// aapt resource value: 0x7f040006
+			public const int red = 2130968582;
+			
+			// aapt resource value: 0x7f040005
+			public const int seekbar_text_color = 2130968581;
 			
 			static Color()
 			{
@@ -69,20 +81,20 @@ namespace Exercise1Solution
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f050003
-			public const int edt_height = 2131034115;
-			
-			// aapt resource value: 0x7f050002
-			public const int margin_left = 2131034114;
+			// aapt resource value: 0x7f050000
+			public const int linear_margin = 2131034112;
 			
 			// aapt resource value: 0x7f050004
-			public const int normal_size = 2131034116;
+			public const int seekbar_margin_right = 2131034116;
+			
+			// aapt resource value: 0x7f050003
+			public const int seekbar_margin_top = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int seekbar_text_size = 2131034114;
 			
 			// aapt resource value: 0x7f050001
-			public const int title_size = 2131034113;
-			
-			// aapt resource value: 0x7f050000
-			public const int toolbar_navigation_text_size = 2131034112;
+			public const int text_size = 2131034113;
 			
 			static Dimension()
 			{
@@ -98,10 +110,19 @@ namespace Exercise1Solution
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int icon = 2130837504;
+			public const int filled_circle_40 = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int logofb = 2130837505;
+			public const int minus40 = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int plus40 = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int seek_circle = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int slider_progress = 2130837508;
 			
 			static Drawable()
 			{
@@ -117,10 +138,25 @@ namespace Exercise1Solution
 		{
 			
 			// aapt resource value: 0x7f070000
-			public const int toolbar = 2131165184;
+			public const int btnDes = 2131165184;
+			
+			// aapt resource value: 0x7f070002
+			public const int btnInc = 2131165186;
+			
+			// aapt resource value: 0x7f070003
+			public const int btnUpdate = 2131165187;
+			
+			// aapt resource value: 0x7f070006
+			public const int customSb = 2131165190;
+			
+			// aapt resource value: 0x7f070005
+			public const int seekbar = 2131165189;
+			
+			// aapt resource value: 0x7f070004
+			public const int tv1 = 2131165188;
 			
 			// aapt resource value: 0x7f070001
-			public const int tv1 = 2131165185;
+			public const int tvValue = 2131165185;
 			
 			static Id()
 			{
@@ -136,7 +172,10 @@ namespace Exercise1Solution
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int custom_seek_bar = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
 			
 			static Layout()
 			{
@@ -154,41 +193,17 @@ namespace Exercise1Solution
 			// aapt resource value: 0x7f060000
 			public const int app_name = 2131099648;
 			
-			// aapt resource value: 0x7f060002
-			public const int back = 2131099650;
+			// aapt resource value: 0x7f060004
+			public const int current_value = 2131099652;
 			
 			// aapt resource value: 0x7f060001
-			public const int backspace = 2131099649;
-			
-			// aapt resource value: 0x7f06000a
-			public const int confirm_password = 2131099658;
-			
-			// aapt resource value: 0x7f060004
-			public const int connect_with_facebook = 2131099652;
-			
-			// aapt resource value: 0x7f060007
-			public const int email_address = 2131099655;
-			
-			// aapt resource value: 0x7f060005
-			public const int first_name = 2131099653;
-			
-			// aapt resource value: 0x7f06000b
-			public const int i_agree_to_the = 2131099659;
-			
-			// aapt resource value: 0x7f060006
-			public const int last_name = 2131099654;
-			
-			// aapt resource value: 0x7f060009
-			public const int password = 2131099657;
+			public const int default_value = 2131099649;
 			
 			// aapt resource value: 0x7f060003
-			public const int sign_up = 2131099651;
+			public const int update = 2131099651;
 			
-			// aapt resource value: 0x7f06000c
-			public const int terms_of_service = 2131099660;
-			
-			// aapt resource value: 0x7f060008
-			public const int username = 2131099656;
+			// aapt resource value: 0x7f060002
+			public const int value = 2131099650;
 			
 			static String()
 			{
