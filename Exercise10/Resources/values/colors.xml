@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="border_color">#3cc4bd</color>
+    <color name="white">#fff</color>
+    <color name="needle_color">#6b6b6b</color>
+</resources>
