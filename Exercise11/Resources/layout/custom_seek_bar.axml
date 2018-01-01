@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/btnDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/minus40" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/linear_margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_value"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/value" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/btnInc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/plus40" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/update" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_value"
+        android:textColor="@color/seekbar_text_color"
+        android:textSize="@dimen/seekbar_text_size"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/linear_margin"
+        android:layout_marginTop="@dimen/linear_margin" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/seekbar_margin_right"
+            android:textColor="@color/seekbar_text_color"
+            android:textSize="@dimen/seekbar_text_size"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv1"
+            android:layout_marginLeft="@dimen/linear_margin"
+            android:layout_marginTop="@dimen/seekbar_margin_top"
+            android:progress="50"
+            android:progressDrawable="@drawable/slider_progress"
+            android:thumb="@drawable/seek_circle"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/tv1" />
+    </RelativeLayout>
+</LinearLayout>
