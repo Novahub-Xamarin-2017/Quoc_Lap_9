@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_navigation_text_size">17sp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="margin_left">20dp</dimen>
+    <dimen name="edt_height">75dp</dimen>
+    <dimen name="normal_size">18sp</dimen>
+    <dimen name="result_text">60sp</dimen>
+    <dimen name="result_margin_right">5dp</dimen>
+</resources>

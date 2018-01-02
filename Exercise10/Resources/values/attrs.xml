@@ -1,0 +1,6 @@
+﻿<resources>
+  <declare-styleable name="Clock">
+    <attr name="border_color" format="color" />
+    <attr name="needle_color" format="color" />
+  </declare-styleable>
+</resources>
